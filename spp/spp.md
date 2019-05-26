@@ -761,32 +761,79 @@ GridPane
 недопустимы
 #### 241. Классы, применяемые для организации многопоточности в JavaFX, называются
 Task и Worker
-
 ## 29
 #### 242. Этот интерфейс применяется при использовании статических SQL-запросов, не изменяющихся в процессе работы
->todo
+Statement
 #### 243. Этот интерфейс применяется, если SQL-запросы используют параметры, которые многократно изменяются в процессе работы
->todo
-#### 244. Метод ```Statement```, возвращающий ```ResultSet```-объект, называется
->todo
-#### 245. Интерфейс ```CallableStatement``` применяется для
->todo
-#### 246. С помощью этого интерфейса можно получить доступ к данным, полученным оператором ```SELECT```
->todo
-#### 247. По выборке, получаемой с помощью объекта ```ResultSet```, можно двигаться
->todo
-#### 248. Выборка, получаемая с помощью ```ResultSet``` является
->todo
+PreparedStatement
+#### 244. Метод 
+Statement
+, возвращающий 
+ResultSet
+-объект, называется
+ResultSet executeQuery (String SQL)
+#### 245. Интерфейс 
+CallableStatement
+ применяется для
+CallableStatemen
+ – для организации доступа к хранимым процедурам БД. Может также принимать параметры.
+#### 246. С помощью этого интерфейса можно получить доступ к данным, полученным оператором 
+SELECT
+ResultSet
+#### 247. По выборке, получаемой с помощью объекта 
+ResultSet
+, можно двигаться
+Режимы:
+- ResultSet.TYPE_FORWARD_ONLY – курсор может двигаться только в прямом направлени
+- ResultSet.TYPE_SCROLL_INSENSITIVE – курсор может перемещаться вперед и назад, а выборка не чувствительна к изменениям, производимыми другими пользователями БД после формирования выборки.
+- ResultSet.TYPE_SCROLL_SENSITIVE – курсор может перемещаться вперед и назад, а выборка чувствительна к изменениям, производимыми другими пользователями БД после формирования выборки.
+Методы для навигации по выборке:
+- public void beforeFirst() throws SQLException
+- public void afterLast() throws SQLException
+- public boolean first() throws SQLException
+- public void last() throws SQLException
+- public boolean absolute(int row) throws SQLException
+- public boolean relative(int row) throws SQLException
+- public boolean previous() throws SQLException
+- public boolean next() throws SQLException
+- public int getRow() throws SQLException
+- public void moveToInsertRow() throws SQLException
+- public void moveToCurrentRow() throws SQLException
+#### 248. Выборка, получаемая с помощью 
+ResultSet
+ является
+по умолчанию read_only
 #### 249. Ключевая особенность транзакций -
->todo
+Транзакция либо выполняется полностью, либо не выполняется вообще.
 #### 250. Типы данных JDBC
->todo
+SQL     JDBC/Java
+VARCHAR     java.lang.String
+CHAR        java.lang.String
+BIT         boolean
+NUMERIC     java.math.BigDecimal
+INTEGER     int
+BIGINT      long
+TINYINT     byte
+SMALLINT    short
+DOUBLE      double
+TIME        java.sql.Time
+DATE        java.sql.Date
+BLOB        java.sql.Blob
+ARRAY       java.sql.Array
+BINARY      byte[ ]
 #### 251. Для закрепления изменений, произведенных транзакцией
->todo
-#### 252. Для включения режима транзакций при наличии объекта ```Connection conn``` используется
->todo
+conn.commit();
+#### 252. Для включения режима транзакций при наличии объекта 
+Connection conn
+ используется
+conn.setAutoCommit(false)
 #### 253. Для внесения изменений в таблицу базы данных
->todo
+Для обновления соответствующей таблицы нужно вызвать один из следующих методов:
+- public void updateRow()
+- public void deleteRow()
+- public void refreshRow()
+- public void cancelRowUpdates()
+- public void insertRow() – может применяться только тогда, когда курсор находится в строке вставки.
 
 ## 30
 #### 254. При использовании ссылок на методы можно ссылаться на
