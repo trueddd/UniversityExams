@@ -746,80 +746,80 @@ Generics не дадут скомпилировать код с ошибкой, 
 
 ## 28
 #### 234. Объект, представляющий собой окно программы и содержащий все объекты JavaFX-приложения называется
-Stage
+```Stage```
 #### 235. Объект, представляющий физический контент JavaFX-приложения называется
-Scene
+```Scene```
 #### 236. Основным паттерном, используемым при разработке JavaFX-приложения, является
 MVC
 #### 237. Разметка JavaFX-приложения хранится в файле с расширением
 fxml
 #### 238. Макет JavaFX, размещающий все компоненты приложения последовательно друг на друге, называется
-StackPane
+```StackPane```
 #### 239. Макет JavaFX, добавляющий компоненты приложения в форме плиток одинакового размера, называется
-GridPane
+```GridPane```
 #### 240. Одновременные манипуляции, выполняемые несколькими потоками, над графом сцены JavaFX
 недопустимы
 #### 241. Классы, применяемые для организации многопоточности в JavaFX, называются
-Task и Worker
+```Task``` и ```Worker```
+
 ## 29
 #### 242. Этот интерфейс применяется при использовании статических SQL-запросов, не изменяющихся в процессе работы
+```Java
 Statement
+```
 #### 243. Этот интерфейс применяется, если SQL-запросы используют параметры, которые многократно изменяются в процессе работы
+```Java
 PreparedStatement
-#### 244. Метод Statement, возвращающий ResultSet-объект, называется
+```
+#### 244. Метод ```Statement```, возвращающий ```ResultSet```-объект, называется
+```Java
 ResultSet executeQuery (String SQL)
-#### 245. Интерфейс CallableStatement применяется для
- – для организации доступа к хранимым процедурам БД. Может также принимать параметры.
-#### 246. С помощью этого интерфейса можно получить доступ к данным, полученным оператором SELECT
-ResultSet
-#### 247. По выборке, получаемой с помощью объекта ResultSet , можно двигаться
+```
+#### 245. Интерфейс ```CallableStatement``` применяется для
+организации доступа к хранимым процедурам БД
+#### 246. С помощью этого интерфейса можно получить доступ к данным, полученным оператором ```SELECT```
+```ResultSet```
+#### 247. По выборке, получаемой с помощью объекта ```ResultSet```, можно двигаться
 Режимы:
-- ResultSet.TYPE_FORWARD_ONLY – курсор может двигаться только в прямом направлени
-- ResultSet.TYPE_SCROLL_INSENSITIVE – курсор может перемещаться вперед и назад, а выборка не чувствительна к изменениям, производимыми другими пользователями БД после формирования выборки.
-- ResultSet.TYPE_SCROLL_SENSITIVE – курсор может перемещаться вперед и назад, а выборка чувствительна к изменениям, производимыми другими пользователями БД после формирования выборки.
-Методы для навигации по выборке:
-- public void beforeFirst() throws SQLException
-- public void afterLast() throws SQLException
-- public boolean first() throws SQLException
-- public void last() throws SQLException
-- public boolean absolute(int row) throws SQLException
-- public boolean relative(int row) throws SQLException
-- public boolean previous() throws SQLException
-- public boolean next() throws SQLException
-- public int getRow() throws SQLException
-- public void moveToInsertRow() throws SQLException
-- public void moveToCurrentRow() throws SQLException
+- ```ResultSet.TYPE_FORWARD_ONLY``` – курсор может двигаться только в прямом направлени
+- ```ResultSet.TYPE_SCROLL_INSENSITIVE``` – курсор может перемещаться вперед и назад, а выборка не чувствительна к изменениям, производимыми другими пользователями БД после формирования выборки.
+- ```ResultSet.TYPE_SCROLL_SENSITIVE``` – курсор может перемещаться вперед и назад, а выборка чувствительна к изменениям, производимыми другими пользователями БД после формирования выборки.
 #### 248. Выборка, получаемая с помощью ResultSet является
 по умолчанию read_only
 #### 249. Ключевая особенность транзакций -
 Транзакция либо выполняется полностью, либо не выполняется вообще.
 #### 250. Типы данных JDBC
-SQL     JDBC/Java
-VARCHAR     java.lang.String
-CHAR        java.lang.String
-BIT         boolean
-NUMERIC     java.math.BigDecimal
-INTEGER     int
-BIGINT      long
-TINYINT     byte
-SMALLINT    short
-DOUBLE      double
-TIME        java.sql.Time
-DATE        java.sql.Date
-BLOB        java.sql.Blob
-ARRAY       java.sql.Array
-BINARY      byte[ ]
+```SQL
+VARCHAR
+CHAR
+BIT
+NUMERIC
+INTEGER
+BIGINT
+TINYINT
+SMALLINT
+DOUBLE
+TIME
+DATE
+BLOB
+ARRAY
+BINARY
+```
 #### 251. Для закрепления изменений, произведенных транзакцией
+```Java
 conn.commit();
+```
 #### 252. Для включения режима транзакций при наличии объекта Connection conn  используется
+```Java
 conn.setAutoCommit(false)
+```
 #### 253. Для внесения изменений в таблицу базы данных
 Для обновления соответствующей таблицы нужно вызвать один из следующих методов:
-- public void updateRow()
-- public void deleteRow()
-- public void refreshRow()
-- public void cancelRowUpdates()
-- public void insertRow() – может применяться только тогда, когда курсор находится в строке вставки.
+- public void ```updateRow()```
+- public void ```deleteRow()```
+- public void ```refreshRow()```
+- public void ```cancelRowUpdates()```
+- public void ```insertRow()``` – может применяться только тогда, когда курсор находится в строке вставки.
 
 ## 30
 #### 254. При использовании ссылок на методы можно ссылаться на
