@@ -908,22 +908,22 @@ ResultSet executeQuery (String SQL)
 #### 249. Ключевая особенность транзакций -
 Транзакция либо выполняется полностью, либо не выполняется вообще.
 #### 250. Типы данных JDBC
-```SQL
-VARCHAR
-CHAR
-BIT
-NUMERIC
-INTEGER
-BIGINT
-TINYINT
-SMALLINT
-DOUBLE
-TIME
-DATE
-BLOB
-ARRAY
-BINARY
-```
+|SQL|JDBC/Java|
+|---|---------|
+|VARCHAR|java.lang.String|
+|CHAR|java.lang.String|
+|BIT|boolean|
+|NUMERIC|java.math.BigDecimal|
+|INTEGER|int|
+|BIGINT|long|
+|TINYINT|byte|
+|SMALLINT|short|
+|DOUBLE|double|
+|TIME|java.sql.Time|
+|DATE|java.sql.Date|
+|BLOB|java.sql.Blob|
+|ARRAY|java.sql.Array|
+|BINARY|byte[ ]|
 #### 251. Для закрепления изменений, произведенных транзакцией
 ```Java
 conn.commit();
