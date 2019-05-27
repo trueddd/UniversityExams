@@ -133,55 +133,46 @@ String.charAt()
 ## 5
 #### 36. Выберите метод, не преобразующий строку
 Методы, преобразующие строку:
-charAt()
-compareTo()
-concat()
-contentEquals()
-copyValueOf()
-endsWith()
-equals()
-equalsIgnoreCase()
-getBytes()
-getChars()
-hashCode()
-indexOf()
-intern()
-lastIndexOf()
-length()
-matches()
-regionMatches()
-replace()
-replaceAll()
-replaceFirst()
-split()
-startsWith()
-subSequence()
-substring()
-toCharArray()
-toLowerCase()
-toString()
-toUpperCase()
-String trim()
-valueOf()
+```Java
+charAt(), compareTo(), concat(), contentEquals(), copyValueOf(), endsWith(), equals(), equalsIgnoreCase(), getBytes(), getChars(), hashCode(), indexOf(), intern(), lastIndexOf(), length(), matches(), regionMatches(), replace(), replaceAll(), replaceFirst(), split(), startsWith(), subSequence(), substring(), toCharArray(), toLowerCase(), toString(), toUpperCase(), String trim(), valueOf()
+```
 #### 37. Для какого потока не является необходимым вызов метода ```close```
 >todo
 #### 38. К стандартным потокам ввода-вывода Java не относится
-InPutStream – поток ввода. К нему относится: FileInputStream, ByteArrayInputStream, FilterInputStream (DataInputStream, BufferedInputStream), ObjectInputStream.
-OutPutStream – поток вывода. К нему относится: FileOutputStream, ByteArrayOutputStream, FilterOutputStream (DataOutputStream, BufferedOutputStream), ObjectOutputStream.
+```InPutStream``` – поток ввода. К нему относится: ```FileInputStream```, ```ByteArrayInputStream```, ```FilterInputStream``` (```DataInputStream```, ```BufferedInputStream```), ```ObjectInputStream```.
+```OutPutStream``` – поток вывода. К нему относится: ```FileOutputStream```, ```ByteArrayOutputStream```, ```FilterOutputStream``` (```DataOutputStream```, ```BufferedOutputStream```), ```ObjectOutputStream```.
 #### 39. Пакет ```java.lang``` является
-Пакет java.lang является наиболее важным из всех пакетов, входящих в Java API, поскольку включает классы, составляющие основу для всех других классов. Каждый класс в Java неявным образом импортирует все классы данного пакета, поэтому данный пакет можно не импортировать.
+Пакет ```java.lang``` является наиболее важным из всех пакетов, входящих в Java API, поскольку включает классы, составляющие основу для всех других классов. Каждый класс в Java неявным образом импортирует все классы данного пакета, поэтому данный пакет можно не импортировать.
 #### 40. Пакет ```java.util``` является
-Java включает большое количество вспомогательных классов, широко используемых в других встроенных пакетах Java. Эти классы расположены в пакете java.util и используются для работы с набором объектов, взаимодействия с системными функциями низкого уровня, для работы с математическими функциями, генерации случайных чисел и манипуляций с датой и временем.
+Java включает большое количество вспомогательных классов, широко используемых в других встроенных пакетах Java. Эти классы расположены в пакете ```java.util``` и используются для работы с набором объектов, взаимодействия с системными функциями низкого уровня, для работы с математическими функциями, генерации случайных чисел и манипуляций с датой и временем.
 #### 41. Строка не может быть преобразована в число типа ```double``` применением
 Может быть преобразована:
-С использованием конструктора (Double d1 = new Double("4.4e10");)
-C использованием метода valueOf класса Double (Double d2 = Double.valueOf(str1);)
-C использованием метода parseDouble класса Double (d3 = Double.parseDouble(str2);)
+- С использованием конструктора
+```Java
+(Double d1 = new Double("4.4e10");)
+```
+- C использованием метода ```valueOf``` класса ```Double```
+```Java
+(Double d2 = Double.valueOf(str1);)
+```
+- C использованием метода ```parseDouble``` класса ```Double```
+```Java
+(d3 = Double.parseDouble(str2);)
+```
 #### 42. Строка не может быть преобразована в число типа ```int``` применением
 Может быть преобразована:
-C использованием конструктора (Integer i1 = new Integer("20349");)
-C использованием метода valueOf класса Integer (Integer i2 = Integer.valueOf(str1);)
-C использованием метода parseInt класса Integer (i3 = Integer.parseInt(str2);)
+- C использованием конструктора
+```Java
+(Integer i1 = new Integer("20349");)
+```
+- C использованием метода ```valueOf``` класса ```Integer```
+```Java
+(Integer i2 = Integer.valueOf(str1);)
+```
+- C использованием метода ```parseInt``` класса ```Integer```
+```Java
+(i3 = Integer.parseInt(str2);)
+```
 
 ## 6
 #### 43. Глубокое копирование массива объектов может быть достигнуто
