@@ -221,7 +221,7 @@ int i; int j; (false ? i: j) = 55;
 - У конструкторов нет типа возвращаемого результата.
 - Конструкторы можно перегружать.
 #### 56. Выберите ложное высказывание относительно конструкторов в классах Java
-[см.выше](https://github.com/trueddd/UniversityExams/blob/spp/spp/spp.md#55-%D0%B2%D1%8B%D0%B1%D0%B5%D1%80%D0%B8%D1%82%D0%B5-%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D0%B5-%D0%B2%D1%8B%D1%81%D0%BA%D0%B0%D0%B7%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BE%D1%82%D0%BD%D0%BE%D1%81%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE-%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D0%BE%D1%80%D0%BE%D0%B2-%D0%B2-%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%B0%D1%85-java)
+[см.выше](https://github.com/trueddd/UniversityExams/blob/master/spp/spp.md#55-%D0%B2%D1%8B%D0%B1%D0%B5%D1%80%D0%B8%D1%82%D0%B5-%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D0%B5-%D0%B2%D1%8B%D1%81%D0%BA%D0%B0%D0%B7%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BE%D1%82%D0%BD%D0%BE%D1%81%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE-%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D0%BE%D1%80%D0%BE%D0%B2-%D0%B2-%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%B0%D1%85-java)
 #### 57. Для метода с одним параметром, которым является Java-объект, его поля будут передаваться
 копия ссылки на область памяти, в которой находится объект
 #### 58. Методы с модификатором ```final```
@@ -314,7 +314,7 @@ implements
 - Перечисления в Java представляют собой классы (могут содержать в себе конструкторы, методы, поля данных)
 - Перечисления не могут быть суперклассами и не могут наследоваться от других классов
 #### 83. Выберите ложное высказывание о перечислениях
-[click](https://github.com/trueddd/UniversityExams/blob/spp/spp/spp.md#82-%D0%B2%D1%8B%D0%B1%D0%B5%D1%80%D0%B8%D1%82%D0%B5-%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D0%B5-%D0%B2%D1%8B%D1%81%D0%BA%D0%B0%D0%B7%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BE-%D0%BF%D0%B5%D1%80%D0%B5%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%D1%85)
+[click](https://github.com/trueddd/UniversityExams/blob/master/spp/spp.md#82-%D0%B2%D1%8B%D0%B1%D0%B5%D1%80%D0%B8%D1%82%D0%B5-%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D0%B5-%D0%B2%D1%8B%D1%81%D0%BA%D0%B0%D0%B7%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BE-%D0%BF%D0%B5%D1%80%D0%B5%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%D1%85)
 #### 84. Выберите неверное утверждение о пакетах
 Пакет (package) — это некий контейнер, который используется для того, чтобы изолировать имена классов. Например, вы можете создать класс ```List```, заключить его в пакет и не думать после этого о возможных конфликтах, которые могли бы возникнуть если бы кто-нибудь еще создал класс с именем ```List```. 
 
@@ -331,7 +331,7 @@ implements
 - ```public static тип_перечисления[] values()```
 - ```public static тип_перечисления valuesOf(String строка)```
 #### 89. Перечисление имеет предопределенный метод
-[см 88](https://github.com/trueddd/UniversityExams/blob/spp/spp/spp.md#88-%D0%BF%D0%B5%D1%80%D0%B5%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8%D0%BC%D0%B5%D0%B5%D1%82-%D0%BF%D1%80%D0%B5%D0%B4%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-%D0%BC%D0%B5%D1%82%D0%BE%D0%B4)
+[см 88](https://github.com/trueddd/UniversityExams/blob/master/spp/spp.md#88-%D0%BF%D0%B5%D1%80%D0%B5%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8%D0%BC%D0%B5%D0%B5%D1%82-%D0%BF%D1%80%D0%B5%D0%B4%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-%D0%BC%D0%B5%D1%82%D0%BE%D0%B4)
 
 ## 12
 #### 90. Выберите ложное утверждение об исключениях
