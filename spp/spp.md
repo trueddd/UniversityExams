@@ -1,4 +1,4 @@
-﻿## 1
+## 1
 #### 1. Just-In-Time-компилятор позволяет
 JIT-компиляция (англ. Just-in-time compilation, компиляция «на лету»), динамическая компиляция (англ. dynamic translation) — технология увеличения производительности программных систем, использующих байт-код, путём компиляции байт-кода в машинный код или в другой формат непосредственно во время работы программы. 
 #### 2. Для разработки программ на языке Java необходима установка
@@ -137,7 +137,7 @@ String.charAt()
 charAt(), compareTo(), concat(), contentEquals(), copyValueOf(), endsWith(), equals(), equalsIgnoreCase(), getBytes(), getChars(), hashCode(), indexOf(), intern(), lastIndexOf(), length(), matches(), regionMatches(), replace(), replaceAll(), replaceFirst(), split(), startsWith(), subSequence(), substring(), toCharArray(), toLowerCase(), toString(), toUpperCase(), String trim(), valueOf()
 ```
 #### 37. Для какого потока не является необходимым вызов метода ```close```
->todo
+Если поток открыт в конструкции try-with-resources.
 #### 38. К стандартным потокам ввода-вывода Java не относится
 ```InPutStream``` – поток ввода. К нему относится: ```FileInputStream```, ```ByteArrayInputStream```, ```FilterInputStream``` (```DataInputStream```, ```BufferedInputStream```), ```ObjectInputStream```.
 ```OutPutStream``` – поток вывода. К нему относится: ```FileOutputStream```, ```ByteArrayOutputStream```, ```FilterOutputStream``` (```DataOutputStream```, ```BufferedOutputStream```), ```ObjectOutputStream```.
