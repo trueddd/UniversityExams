@@ -130,7 +130,7 @@ String.charAt()
 #### 36. Выберите метод, не преобразующий строку
 Методы, преобразующие строку:
 ```Java
-charAt(), compareTo(), concat(), contentEquals(), copyValueOf(), endsWith(), equals(), equalsIgnoreCase(), getBytes(), getChars(), hashCode(), indexOf(), intern(), lastIndexOf(), length(), matches(), regionMatches(), replace(), replaceAll(), replaceFirst(), split(), startsWith(), subSequence(), substring(), toCharArray(), toLowerCase(), toString(), toUpperCase(), String trim(), valueOf()
+concat(), replace(), replaceAll(), replaceFirst(), split(), subSequence(), substring(), toCharArray(), toLowerCase(), toString(), toUpperCase(), String trim()
 ```
 #### 37. Для какого потока не является необходимым вызов метода ```close```
 Если поток открыт в конструкции try-with-resources.
