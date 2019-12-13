@@ -6,3 +6,4 @@
 |1H2019|PrIS|[Click](https://github.com/trueddd/UniversityExams/blob/master/pris/PrIS.md)|
 |1H2019|OBiP|[Click](https://github.com/trueddd/UniversityExams/blob/master/obip/obip.md)|
 |1H2019|SPP|[Click](https://github.com/trueddd/UniversityExams/blob/master/spp/spp.md)|
+|2H2019|TiSEB|[Click](https://github.com/trueddd/UniversityExams/blob/tiseb/tiseb/tiseb.md)|
